@@ -1,0 +1,13 @@
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+.DS_Store
+
+# Projet généré par XcodeGen (régénérable depuis project.yml)
+CoachVocal.xcodeproj/
+
+# Clés API — NE PAS committer
+CoachVocal/Secrets.swift
