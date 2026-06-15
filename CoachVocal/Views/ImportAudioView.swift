@@ -266,7 +266,7 @@ struct StepRow: View {
             Image(systemName: completed ? "checkmark.circle.fill" : (active ? "smallcircle.filled.circle" : "circle"))
                 .foregroundStyle(completed ? AppColors.purple : (active ? AppColors.teal : Color.secondary.opacity(0.4)))
             Text(label)
-                .foregroundStyle(active || completed ? .primary : .secondary.opacity(0.5))
+                .foregroundStyle(active || completed ? Color.primary : Color.secondary.opacity(0.5))
         }
     }
 }

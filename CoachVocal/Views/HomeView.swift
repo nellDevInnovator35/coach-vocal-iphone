@@ -112,9 +112,9 @@ struct HomeView: View {
         VStack(spacing: 16) {
             Image(systemName: "mic.fill")
                 .font(.system(size: 64))
-                .foregroundStyle(.secondary.opacity(0.5))
+                .foregroundStyle(Color.secondary.opacity(0.5))
             Text("Appuie sur le micro pour commencer")
-                .foregroundStyle(.secondary.opacity(0.7))
+                .foregroundStyle(Color.secondary.opacity(0.7))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }

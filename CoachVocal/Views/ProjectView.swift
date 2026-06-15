@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftData
 import UniformTypeIdentifiers
+import UIKit
 
 // Portage de ProjectScreen.kt + ProjectViewModel.kt.
 struct ProjectView: View {
@@ -305,7 +306,7 @@ struct SubProjectBar: View {
             }
             if subProjects.isEmpty {
                 Text("Aucun sous-projet. Les éléments sont à la racine.")
-                    .font(.caption).foregroundStyle(.secondary.opacity(0.7))
+                    .font(.caption).foregroundStyle(Color.secondary.opacity(0.7))
             } else {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {

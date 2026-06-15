@@ -12,7 +12,7 @@ struct ClaudeApi {
     """
 
     private let apiKey = Secrets.claudeApiKey
-    private let model = "claude-sonnet-4-20250514"
+    private let model = "claude-sonnet-4-6"
 
     private var session: URLSession {
         let config = URLSessionConfiguration.default

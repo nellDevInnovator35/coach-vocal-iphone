@@ -17,11 +17,11 @@ struct RecordingView: View {
 
             Text(formatTime(elapsed))
                 .font(.system(size: 56, weight: .light, design: .rounded))
-                .foregroundStyle(speech.isRecording ? AppColors.recordingRed : .primary)
+                .foregroundStyle(speech.isRecording ? AppColors.recordingRed : Color.primary)
 
             Text(speech.status.rawValue)
                 .font(.caption)
-                .foregroundStyle(.secondary.opacity(0.7))
+                .foregroundStyle(Color.secondary.opacity(0.7))
                 .padding(.top, 4)
 
             Spacer().frame(height: 20)
@@ -39,7 +39,7 @@ struct RecordingView: View {
             } else if speech.isRecording {
                 Text("La transcription apparaîtra ici...")
                     .font(.caption)
-                    .foregroundStyle(.secondary.opacity(0.5))
+                    .foregroundStyle(Color.secondary.opacity(0.5))
                     .multilineTextAlignment(.center)
             }
 
